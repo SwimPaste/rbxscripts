@@ -96,12 +96,14 @@ local Bypasses = {
     ["attractive"] = "attr{{aieixzvzx:active}}",
     ["raping"] = "rap{{aieixzvzx:ing}}",
     ["fucker"] = "fu{{aieixzvzx:cker}}",
+    ["fucking"] = "fu{{aieixzvzx:ckign}}",
     ["slaves"] = "sla{{aieixzvzx:ves}}",
     ["cracker"] = "crac{{aieixzvzx:ker}}",
     ["niggas"] = "ni{{aieixzvzx:ggas}}",
     ["pussys"] = "pu{{aieixzvzx:ssys}}",
     ["retard"] = "re{{aieixzvzx:tard}}",
     ["retards"] = "ret{{aieixzvzx:ards}}",
+    ["retarded"] = "ret{{aieixzvzx:ards}}",
     ["crackhead"] = "crack{{aieixzvzx:head}}",
     ["cummed"] = "cu{{aieixzvzx:mmed}}",
     ["cums"] = "cu{{aieixzvzx:ms}}",
@@ -152,10 +154,10 @@ local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(sel
                 if x:lower() == _ then
                     if x:upper() ~= x then
                         Message = Message:gsub(x, Bypass)
-                        FinalMessage = Message .. " ng"
+                        FinalMessage = Message .. " fn"
                     else
                         Message = Message:gsub(x, Bypass):upper()
-                        FinalMessage = Message:gsub(x, Bypass):upper() .. " ng"
+                        FinalMessage = Message:gsub(x, Bypass):upper() .. " fn"
                     end
                 end
             end
