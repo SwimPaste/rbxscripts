@@ -146,6 +146,7 @@ local Bypasses = {
     ["пиздобол"] = "пи{{aieixzvzx:здобол}}",
     ["пиздеть"] = "пи{{aieixzvzx:здеть}}",
     ["пиздишь"] = "пи{{aieixzvzx:здишь}}",
+    ["мать"] = "ма{{aieixzvzx:ть}}",
     ["блядина"] = "бл{{aieixzvzx:ядина}}"
 }
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
