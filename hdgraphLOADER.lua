@@ -25,5 +25,5 @@ _G.AdjustQualityToFramerate = false
 
 
 pcall(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/SwimPaste/rbxscripts/main/HDgraphMAIN'),true))()
+loadstring(game:HttpGet(('https://github.com/SwimPaste/rbxscripts/raw/main/HDgraphMAIN.lua'),true))()
 end)
