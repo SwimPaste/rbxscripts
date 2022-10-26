@@ -58,6 +58,7 @@ if game.GameId ~= 203829788 then
         Time = 5
     })
     OrionLib:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/SwimPaste/rbxscripts/main/qhub/universal.lua')))()
 else
     ex_init()
 end
