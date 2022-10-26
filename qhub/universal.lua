@@ -28,16 +28,6 @@ VisualsTab:AddButton({
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/SwimPaste/rbxscripts/main/hdgraphLOADER.lua'),true))()
     end
 })
-function doFarm()
-    spawn(function()
-        while Farm do
-            for i, v in pairs(candy) do
-                v.Position = lp.Character.Torso.Position
-            task.wait()
-            end
-       end
-    end)
-end
 OrionLib:Init()
 
 end
