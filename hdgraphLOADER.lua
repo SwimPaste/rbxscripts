@@ -1,26 +1,3 @@
---(put this in auto-exec if you'd like)
-
---[[
-CREATED: 2/16/22 @9:43PM EST
-UPDATED: 2/16/22 @10:59PM EST
-
-Never really had the chance to credit myself last time, and so here we are. Based of my old script,
-which I never expected to get extremely popular, "HD Graphics", here's the long awaited sequel.
-
-Join the Discord if you'd like to suggest updates or chill with a small community:
-https://discord.gg/6xcG2DRM7d 👈
-
-I also have videos regarding serversides, and general scripting, so consider joining 👆
-
-IF YOU'RE EDITING THIS, PLEASE LEAVE IN THE CREDITS AND THE DISCORD. 🙏
-
-  _  _ ___     ___ ___    _   ___ _  _ ___ ___ ___ 
- | || |   \   / __| _ \  /_\ | _ \ || |_ _/ __/ __|
- | __ | |) | | (_ |   / / _ \|  _/ __ || | (__\__ \
- |_||_|___/   \___|_|_\/_/ \_\_| |_||_|___\___|___/ scripted by Arman#9312 🔥
-                                                   
-]] 
-
 -- GENERAL SETTINGS (YOU MAY EDIT TO YOUR PREFERENCE/LIKING)
 
 _G.SunRays = {
@@ -48,5 +25,5 @@ _G.AdjustQualityToFramerate = false
 
 
 pcall(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/SwimPaste/rbxscripts/main/HDgraphMAIN'),true))()
+loadstring(game:HttpGet(('https://github.com/SwimPaste/rbxscripts/raw/main/HDgraphMAIN.lua'),true))()
 end)
