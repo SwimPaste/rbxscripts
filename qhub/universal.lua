@@ -1,9 +1,12 @@
 --ORION SEX
+local ins = Instance.new("ColorCorrectionEffect")
+ins.Name = "ColorCorrectionQHUB"
+ins.Parent = game:GetService("Lighting")
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-function ex_init()
-
 local MainWindow = OrionLib:MakeWindow({Name = "qHub Universal", HidePremium = false, SaveConfig = true, ConfigFolder = "qHub_thm", IntroEnabled = true, IntroText = "quell's hub"})
+
 local VisualsTab = MainWindow:MakeTab({
     Name = "Visuals",
     Icon = "rbxassetid://4483345998",
@@ -28,7 +31,12 @@ VisualsTab:AddButton({
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/SwimPaste/rbxscripts/main/hdgraphLOADER.lua'),true))()
     end
 })
+VisualsTab:AddColorpicker({
+	Name = "Color Correction",
+	Default = Color3.fromRGB(255, 255, 255),
+	Callback = function(Value)
+        ins.TintColor = Value
+		print(Value)
+	end
+})
 OrionLib:Init()
-
-end
-ex_init()
