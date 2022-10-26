@@ -53,7 +53,7 @@ end
 if game.GameId ~= 203829788 then
     OrionLib:MakeNotification({
         Name = "Error!",
-        Content = "This hub is only for The Horror Mansion!\nYou will load universal",
+        Content = "This hub is only for The Horror Mansion! You will load universal.",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
