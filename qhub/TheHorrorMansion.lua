@@ -51,7 +51,7 @@ function ex_init()
         Callback = function()
             getgenv().GodModeState = Value
             GodMode()
-            print("GodMode:" + GodModeState)
+            print(GodModeState)
         end
     })
 
@@ -68,7 +68,7 @@ function ex_init()
         Callback = function(Value)
             getgenv().CandyFarmState = Value
             doCandyFarm()
-            print("CandyFarm:" + CandyFarmState)
+            print(CandyFarmState)
         end
     })
 
