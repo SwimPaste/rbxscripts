@@ -48,7 +48,8 @@ function ex_init()
 
     MainTab:AddToggle({
         Name = "GodMode",
-        Callback = function()
+        Default = false,
+        Callback = function(Value)
             getgenv().GodModeState = Value
             GodMode()
             print(GodModeState)
