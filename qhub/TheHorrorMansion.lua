@@ -27,7 +27,7 @@ SettingsTab:AddButton({
     end
 })
 
-SettingsTab:AddToggle({
+FarmTab:AddToggle({
 	Name = "Candy Farm",
 	Default = false,
 	Callback = function(Value)
