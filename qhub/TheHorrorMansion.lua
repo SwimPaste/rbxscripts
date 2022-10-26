@@ -3,6 +3,9 @@ getgenv().CandySpawn = game:GetService("Workspace")["Halloween Decor"]["Candy Sp
 getgenv().Candy = CandySpawn:GetChildren()
 getgenv().LPlayer = game.Players.LocalPlayer
 getgenv().CandyFarmState = false
+getgenv().GodModeState = false
+getgenv().Character = LPlayer.Character
+getgenv().Humanoid = Character.Humanoid
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
@@ -22,6 +25,36 @@ function ex_init()
         end)
     end
 
+    function GodMode()
+        spawn(function()
+            while GodModeState do
+                Humanoid.HealthChanged:connect(function()
+                    if Humanoid.Health < 10 then
+                        Humanoid.Health = Humanoid.MaxHealth
+                    end
+                end)
+            end
+        end)
+    end
+
+
+
+    --Creating "Main" tab and it's contents
+    local MainTab = MainWindow:MakeTab({
+        Name = "Main",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+
+    MainTab:AddToggle({
+        Name = "GodMode",
+        Callback = function()
+            getgenv().GodModeState = Value
+            GodMode()
+            print("GodMode:" + GodModeState)
+        end
+    })
+
     --Creating "Farm" tab and it's contents
     local FarmTab = MainWindow:MakeTab({
         Name = "Farm",
@@ -33,9 +66,9 @@ function ex_init()
         Name = "Candy Farm",
         Default = false,
         Callback = function(Value)
-            getgenv().Farm = Value
+            getgenv().CandyFarmState = Value
             doCandyFarm()
-            print(CandyFarmState)
+            print("CandyFarm:" + CandyFarmState)
         end
     })
 
