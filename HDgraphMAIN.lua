@@ -1,28 +1,5 @@
 repeat wait(2) until _G.SunRays
 
---[[
-CREATED: 2/16/22 @9:43PM EST
-UPDATED: 2/16/22 @9:43PM EST
-
-Never really had the chance to credit myself last time, and so here we are. Based of my old script,
-which I never expected to get extremely popular, "HD Graphics", here's the long awaited sequel.
-
-Join the Discord if you'd like to suggest updates or chill with a small community:
-https://discord.gg/6xcG2DRM7d 👈
-
-I also have videos regarding serversides, and general scripting, so consider joining 👆
-
-IF YOU'RE EDITING THIS, PLEASE LEAVE IN THE CREDITS AND THE DISCORD. 🙏
-
-  _  _ ___     ___ ___    _   ___ _  _ ___ ___ ___ 
- | || |   \   / __| _ \  /_\ | _ \ || |_ _/ __/ __|
- | __ | |) | | (_ |   / / _ \|  _/ __ || | (__\__ \
- |_||_|___/   \___|_|_\/_/ \_\_| |_||_|___\___|___/ scripted by Arman#9312 🔥
-                                                   
-]]
-
---// Highly recommend using the loadstring instead of saving this, because the loadstring auto updates ⚠
-
 local getVariables = {
 	["SunRaysEffect"] = _G.SunRays,
 	["ColorCorrectionEffect"] = _G.ColorCorrection,
@@ -98,18 +75,4 @@ coroutine.resume(coroutine.create(function() -- Apply Lighting changes
 	else
 		print('"Atmosphere" already exists.')
 	end
-
-	local msg = Instance.new("Message",workspace)
-	msg.Text = "SCRIPTED BY ARMAN#9312! JOIN THE DISCORD 👉 https://discord.gg/6xcG2DRM7d 👈"
-
-	task.spawn(function()
-		wait(2)
-		game:GetService("Debris"):AddItem(msg,2)
-	end)
 end))
-
-print("\
-HD GRAPHICS LOADED BY Arman#9312!\
-\
-Join the Discord if you'd like to suggest updates or chill with a small community:\
-https://discord.gg/6xcG2DRM7d 👈")
