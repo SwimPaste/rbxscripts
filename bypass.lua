@@ -142,11 +142,11 @@ local Bypasses = {
     ["ебать"] = "е{{aieixzvzx:бать}}",
     ["блять"] = "бл{{aieixzvzx:ять}}",
     ["блядина"] = "бл{{aieixzvzx:ядина}}",
-    ["нахуй"] = "нах{{aieixzvzx:уй}}"
+    ["нахуй"] = "нах{{aieixzvzx:уй}}",
     ["пиздобол"] = "пи{{aieixzvzx:здобол}}",
     ["пиздеть"] = "пи{{aieixzvzx:здеть}}",
     ["пиздишь"] = "пи{{aieixzvzx:здишь}}",
-    ["блядина"] = "бл{{aieixzvzx:ядина}}",
+    ["блядина"] = "бл{{aieixzvzx:ядина}}"
 }
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Remote = ReplicatedStorage:FindFirstChild("SayMessageRequest", true)
