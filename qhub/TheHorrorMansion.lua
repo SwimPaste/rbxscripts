@@ -53,12 +53,12 @@ end
 if game.GameId ~= 203829788 then
     OrionLib:MakeNotification({
         Name = "Error!",
-        Content = "This hub is only for The Horror Mansion! You will load universal.",
+        Content = "This hub is only for The Horror Mansion! Universal will be loaded.",
         Image = "rbxassetid://4483345998",
         Time = 5
     })
     OrionLib:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/SwimPaste/rbxscripts/main/qhub/universal.lua')))()
+loadstring(game:HttpGet(('https://github.com/SwimPaste/rbxscripts/raw/main/qhub/universal.lua')))()
 else
     ex_init()
 end
