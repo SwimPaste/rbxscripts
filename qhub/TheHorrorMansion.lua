@@ -25,17 +25,6 @@ function ex_init()
         end)
     end
 
-    function GodMode()
-        spawn(function()
-            while GodModeState do
-                Humanoid.HealthChanged:connect(function()
-                    if Humanoid.Health < 10 then
-                        Humanoid.Health = Humanoid.MaxHealth
-                    end
-                end)
-            end
-        end)
-    end
 
 
 
@@ -46,15 +35,6 @@ function ex_init()
         PremiumOnly = false
     })
 
-    MainTab:AddToggle({
-        Name = "GodMode",
-        Default = false,
-        Callback = function(Value)
-            getgenv().GodModeState = Value
-            GodMode()
-            print(GodModeState)
-        end
-    })
 
     --Creating "Farm" tab and it's contents
     local FarmTab = MainWindow:MakeTab({
@@ -91,16 +71,4 @@ function ex_init()
 
 end
 
---Checking game and loading universal hub if needed
-if game.GameId ~= 203829788 then
-    OrionLib:MakeNotification({
-        Name = "Error!",
-        Content = "This hub is only for The Horror Mansion! Universal will be loaded.",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-    OrionLib:Destroy()
-    loadstring(game:HttpGet(('https://github.com/SwimPaste/rbxscripts/raw/main/qhub/universal.lua')))()
-else
-    ex_init()
-end
+ex_init()
