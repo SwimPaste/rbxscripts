@@ -11,6 +11,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 function ex_init()
 
+    --Creating main window
     local MainWindow = OrionLib:MakeWindow({Name = "qHub for The Horror Mansion", HidePremium = false, SaveConfig = true, ConfigFolder = "qHub_thm", IntroEnabled = true, IntroText = "quell's hub"})
     
     --Creating functions
@@ -71,4 +72,5 @@ function ex_init()
 
 end
 
+--Starting script
 ex_init()
