@@ -323,4 +323,4 @@ if setfflag then
 end
 
 ACLWarning:Destroy()
-print(string.format("Anti Chat-Logger has loaded in %s seconds.", tostring(tick() - ACL_LoadTime):sub(1, 4)))
+print("[✔] AntiBan Executed")
