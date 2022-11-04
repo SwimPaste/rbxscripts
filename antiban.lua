@@ -323,4 +323,4 @@ if setfflag then
 end
 
 ACLWarning:Destroy()
-print("[✔] AntiBan Executed")
+print("[✅] AntiBan Executed")
