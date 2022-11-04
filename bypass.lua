@@ -184,4 +184,4 @@ local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(sel
     
     return ChatBypass(self, ...)
 end)
-print("[✔] ChatBypass Executed")
+print("[✅] ChatBypass Executed")
