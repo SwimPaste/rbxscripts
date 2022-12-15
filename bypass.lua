@@ -46,7 +46,7 @@ local ChatBypass; ChatBypass = hookmetamethod(Remote, "__namecall", function(sel
                         FinalMessage = Message .. " fn"
                     else
                         Message = Message:gsub(x, Bypass):upper()
-                        FinalMessage = Message:gsub(x, Bypass):upper() .. " fn"
+                        FinalMessage = Message:gsub(x, Bypass):upper()
                     end
                 end
             end
