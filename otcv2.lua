@@ -1,8 +1,3 @@
--- (VOID) : Gui to Lua
--- Version: 1.4
-
--- Instances:
-
 local maingui = Instance.new("ScreenGui")
 local holderframe = Instance.new("Frame")
 local mainframe = Instance.new("Frame")
@@ -829,9 +824,6 @@ misc.TextSize = 14.000
 
 UICorner_32.CornerRadius = UDim.new(0, 4)
 UICorner_32.Parent = misc
-
--- Scripts:
-
 local function WVDZG_fake_script() -- unnamedesp.executescript 
 	local script = Instance.new('LocalScript', unnamedesp)
 
