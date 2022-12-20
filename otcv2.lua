@@ -129,7 +129,6 @@ universalframe.Parent = mainframe
 universalframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 universalframe.BackgroundTransparency = 1.000
 universalframe.Size = UDim2.new(0, 620, 0, 550)
-universalframe.Visible = false
 
 espframe.Name = "espframe"
 espframe.Parent = universalframe
@@ -506,6 +505,7 @@ miscframe.Parent = mainframe
 miscframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 miscframe.BackgroundTransparency = 1.000
 miscframe.Size = UDim2.new(0, 620, 0, 550)
+miscframe.Visible = false
 
 clantagframe.Name = "clantagframe"
 clantagframe.Parent = miscframe
