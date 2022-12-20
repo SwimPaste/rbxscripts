@@ -1042,7 +1042,7 @@ local function GUBB_fake_script() -- walkspeed.setws
 	local script = Instance.new('LocalScript', walkspeed)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.valchangeholder.value)
+		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.valchangeholder.value.Text)
 	end)
 end
 coroutine.wrap(GUBB_fake_script)()
@@ -1050,7 +1050,7 @@ local function IWOZOWU_fake_script() -- jumppower.setjp
 	local script = Instance.new('LocalScript', jumppower)
 
 	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.valchangeholder.value)
+		game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.valchangeholder.value.Text)
 	end)
 end
 coroutine.wrap(IWOZOWU_fake_script)()
