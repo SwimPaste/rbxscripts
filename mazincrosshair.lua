@@ -1,8 +1,9 @@
 local rainbowspeed = 2;
 local spinspeed = 2;
-local cursordisable = true;
 local ScreenGui = Instance.new("ScreenGui")
 local TextLabel = Instance.new("TextLabel")
+local inputServ = game:GetService("UserInputService");
+local RunService = game:GetService("RunService")
 if syn then
     syn.protect_gui(ScreenGui)
     ScreenGui.Parent = game:GetService("CoreGui")
@@ -25,15 +26,12 @@ TextLabel.Text = "卐"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 30.000
 TextLabel.TextWrapped = true
-while task.wait() do
-    if cursordisable then
-        local inputServ = game:GetService("UserInputService");
-        inputServ.MouseIconEnabled = false;
-    end
+RunService.Stepped:Connect(function()
+    inputServ.MouseIconEnabled = false;
     local hue = tick() % rainbowspeed / rainbowspeed
     local color = Color3.fromHSV(hue,1,1)
     TextLabel.TextColor3 = color
     TextLabel.Rotation = TextLabel.Rotation + tick() % spinspeed / spinspeed
     local mouse = game:GetService("Players").LocalPlayer:GetMouse()
     TextLabel.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
-end
+end)
