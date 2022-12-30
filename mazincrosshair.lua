@@ -33,7 +33,7 @@
 		local hue = tick() % rainbowspeed / rainbowspeed
 		local color = Color3.fromHSV(hue,1,1)
 		TextLabel.TextColor3 = color
-		TextLabel.Rotation = TextLabel.Rotation + spinspeed
+		TextLabel.Rotation = TextLabel.Rotation + tick() % spinspeed / spinspeed
 		local mouse = game:GetService("Players").LocalPlayer:GetMouse()
 		TextLabel.Position = UDim2.new(0, mouse.X, 0, mouse.Y)
 	end
